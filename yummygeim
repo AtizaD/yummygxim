@@ -552,10 +552,10 @@ echo '{
   "listen": ":5666",
   "cert": "/etc/hysteria/hysteria.crt",
   "key": "/etc/hysteria/hysteria.key",
-  "up_mbps": 1000000000,
-  "down_mbps": 1000000000,
+  "up_mbps": 1,
+  "down_mbps": 1,
   "disable_udp": false,
-  "obfs": "null",
+  "obfs": " null ",
   "auth": {
     "mode": "passwords",
     "config": ["geim:sht "]
