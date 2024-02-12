@@ -555,10 +555,10 @@ echo '{
   "up_mbps": 1,
   "down_mbps": 1,
   "disable_udp": false,
-  "obfs": " null ",
+  "obfs": " ",
   "auth": {
     "mode": "passwords",
-    "config": ["geim:sht "]
+    "config": ["geim:sht"]
   }
 }
 ' >> /etc/hysteria/config.json
