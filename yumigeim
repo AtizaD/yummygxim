@@ -551,7 +551,7 @@ echo '{
   "up_mbps": 1,
   "down_mbps": 1,
   "disable_udp": false,
-  "obfs": "yumi",
+  "obfs": "null",
   "auth": {
     "mode": "passwords",
     "config": ["geim:sht "]
