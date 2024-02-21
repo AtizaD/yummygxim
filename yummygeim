@@ -16,10 +16,11 @@ server_ip=$(curl -s https://api.ipify.org)
 server_interface=$(ip route get 8.8.8.8 | awk '/dev/ {f=NR} f&&NR-1==f' RS=" ")
 
 echo -e " \033[0;35m══════════════════════════════════════════════════════════════════\033[0m"
-echo '
+echo '                                                              
 █▀▀ █▀▀ █ █▀▄▀█   █ █▀   █▀ █░█ ▀█▀
 █▄█ ██▄ █ █░▀░█   █ ▄█   ▄█ █▀█ ░█░
-'
+                                                                   
+ '
 echo -e " \033[0;35m══════════════════════════════════════════════════════════════════\033[0m"
 
 install_require () {
@@ -122,7 +123,7 @@ mkdir -p /var/www/html/stat
 touch /etc/openvpn/server.conf
 touch /etc/openvpn/server2.conf
 
-echo 'DNS=8.8.8.8
+echo 'DNS=1.1.1.1
 DNSStubListener=no' >> /etc/systemd/resolved.conf
 
 echo '#Openvpn Configuration by YModified Developer :)
@@ -550,10 +551,10 @@ echo '{
   "up_mbps": 1,
   "down_mbps": 1,
   "disable_udp": false,
-  "obfs": "geim",
+  "obfs": "null",
   "auth": {
     "mode": "passwords",
-    "config": ["geim:sht "]
+    "config": ["geIm:sht "]
   }
 }
 ' >> /etc/hysteria/config.json
@@ -736,10 +737,11 @@ systemctl restart hysteria-server.service
 history -c;
 rm /etc/.systemlink
 echo -e " \033[0;35m══════════════════════════════════════════════════════════════════\033[0m"
-echo '
+echo '                                                              
 █▀▀ █▀▀ █ █▀▄▀█   █ █▀   █▀ █░█ ▀█▀
 █▄█ ██▄ █ █░▀░█   █ ▄█   ▄█ █▀█ ░█░
-'
+                                                                   
+ '
 echo -e " \033[0;35m══════════════════════════════════════════════════════════════════\033[0m"
 netstat -tpln
 echo -e " \033[0;35m══════════════════════════════════════════════════════════════════\033[0m"
